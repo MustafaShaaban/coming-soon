@@ -4,8 +4,22 @@
 =============================== */
 /* Setup fonts */
 @font-face {
-    
+    font-family: CO_regular;
+    src: url('../fonts/AdobeArabic-Regular.otf');
 }
+@font-face {
+    font-family: CO_bold;
+    src: url('../fonts/ALPHOTOSHOP.COM_HELVETICAWORLD_BOLD.TTF');
+}
+@font-face {
+    font-family: CO_regular2;
+    src: url('../fonts/ALPHOTOSHOP.COM_HELVETICAWORLD_REGULAR.TTF');
+}
+@font-face {
+    font-family: CO_light;
+    src: url('../fonts/FiraSans-Light.otf');
+}
+
 
 
 
