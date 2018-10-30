@@ -4,25 +4,139 @@
 =============================== */
 /* Setup fonts */
 @font-face {
-    
+    font-family: CO_regular;
+    src: url('../fonts/AdobeArabic-Regular.otf');
+}
+@font-face {
+    font-family: CO_bold;
+    src: url('../fonts/ALPHOTOSHOP.COM_HELVETICAWORLD_BOLD.TTF');
+}
+@font-face {
+    font-family: CO_regular2;
+    src: url('../fonts/ALPHOTOSHOP.COM_HELVETICAWORLD_REGULAR.TTF');
+}
+@font-face {
+    font-family: CO_light;
+    src: url('../fonts/FiraSans-Light.otf');
+}
+
+/* Body style*/
+body {
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 10px;
+    color: #FFF;
+}
+.container-fluid {
+    height: 100%;
+}
+h1 {
+    font-family: CO_light;
+    font-size: 90.75px;
+    margin-bottom: 40px;
+}
+h3 {
+    font-family: CO_regular2;
+    font-size: 44.71px;
+}
+h4 {
+    font-family: CO_regular2;
+    font-size: 35px;
+}
+p {
+    margin-top: 0;
+    font-size: 35px;
+    font-family: CO_regular2;
+    line-height: 1.1;
+    word-spacing: -1px;
+}
+/* ===============================
+    Start Of content.
+=============================== */
+.wrap {
+    border: 1px solid #FFF;
+    height: 100%;
+    overflow: auto;
+}
+.wrap .page {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.wrap .page .inner-page {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 15px 0 0;
+    widows: 100%;
+}
+.wrap .page .inner-page .content {
+    text-align: justify;
+    padding-left: 55px;
+}
+.wrap .page .inner-page .content p:nth-of-type(1) {
+    margin-bottom: 50px;
+}
+.wrap .page .inner-page .content p:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+.wrap .page .inner-page .content p span {
+    font-family: CO_bold;
+}
+.wrap .page .inner-page .content p:nth-of-type(1) span {
+    font-size: 45px;
+}
+.wrap .page .inner-page .content p:nth-of-type(1) span:first-of-type {
+    color: #CCCCCC;
+}
+.wrap .page .inner-page .content p:nth-of-type(1) span:last-of-type {
+    color: #EC1C24;
+}
+.wrap .page .inner-page .content p:nth-of-type(2) span {
+     font-size: 38px;
+}
+.wrap .page .inner-page .content img {
+    width: 50%;
+}
+.wrap .page .inner-page .content h4 strong {
+    font-family: CO_bold;
+    font-size: 38px;
+}
+.wrap .page .inner-page .content #timer {
+    margin-top: 40px;
+}
+.wrap .page .inner-page .content #timer h4 {
+    margin-bottom: 20px;
+}
+.wrap .page .inner-page .content #timer > div {
+    margin-right: 42px;
+    display: inline-block;
+    text-align: center;
+}
+.wrap .page .inner-page .content #timer > div .num {
+    display: block;
+    width: 72px;
+    height: 72px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 32px;
+    font-family: CO_bold;
+    margin-bottom: 10px;
+}
+.wrap .page .inner-page .content #timer > div .type {
+    font-family: CO_bold;
+    font-size: 18px;
 }
 
 
 
-
-
-
-.top-to-bottom {
-    border-width: 3px;
-    border-style: solid;
-    -webkit-border-image:
-            -webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
-    -webkit-border-image:
-            -webkit-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
-    -moz-border-image:
-            -moz-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
-    -o-border-image:
-            -o-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
-    border-image:
-            linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
+.wrap .page .inner-page .logo {
+    float: right;
+    padding-right: 25px;
+    text-align: center;
 }
